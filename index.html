@@ -187,14 +187,16 @@
                 <dt>-select-</dt>
                 <dd>
                     -select name="name"-
-                    -optionn tags-
+                    -option value="value1"-text1-/option-
+                    -option value="value2"-text2-/option-
+                    ...
                     -/select-
                 </dd>
             </div>
             <div>
                 <dt>-option-</dt>
                 <dd>
-                    -select tag-
+                    -select name="name"-
                     -option value="value1"-text1-/option-
                     -option value="value2"-text2-/option-
                     ...
@@ -220,11 +222,20 @@
             </div>
             <div>
                 <dt>-datalist-</dt>
-                <dd></dd>
+                <dd>
+                    -datalist id="id"-
+                    -option value="value"/-
+                    -option value="value"/-
+                    -/datalist-
+                </dd>
             </div>
             <div>
                 <dt>-button-</dt>
-                <dd></dd>
+                <dd>
+                    -button type="text"-
+                    content
+                    -/button-
+                </dd>
             </div>
         </dl>
         <h3>Attributes</h3>
@@ -286,7 +297,7 @@
             </tr>
             <tr>
                 <th>label</th>
-                <td data-label="label"></td>
+                <td data-label="label">To associate a text string with a control, the text string has to be enclosed within the label element</td>
             </tr>
             <tr>
                 <th>Onclick</th>
