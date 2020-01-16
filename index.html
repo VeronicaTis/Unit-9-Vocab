@@ -1,7 +1,25 @@
 <!DOCTYPE html>
 <html>
     <head>
-
+        <style>
+            body{
+                background-color: darkorchid;
+                color:white;
+            }
+            ul{
+                list-style:none;
+            }
+            header{
+                font-size:60px;
+                text-align:center;
+            }
+            table{
+                border-collapse:collapse;
+            }
+            table, th, td{
+                border: 6px double cornflowerblue
+            }
+        </style>
     </head>
     <body>
         <header>Unit 9 Vocabulary</header>
@@ -152,25 +170,31 @@
             <div>
                 <dt>-Form-</dt>
                 <dd>
-                    -form id="text" attributes-
-                    content
-                    -/form-
+                    <ul>
+                        <li>-form id="text" attributes-</li>
+                        <ul><li>content</li></ul>
+                        <li>-/form-</li>
+                    </ul>
                 </dd>
             </div>
             <div>
                 <dt>-fieldset-</dt>
                 <dd>
-                    -fieldset-
-                    content
-                    -/fieldset-
+                    <ul>
+                        <li>-fieldset-</li>
+                        <ul><li>content</li></ul>
+                        <li>-/fieldset-</li>
+                    </ul>
                 </dd>
             </div>
             <div>
                 <dt>-legend-</dt>
                 <dd>
-                    -legend-
-                    text
-                    -/legend-
+                    <ul>
+                        <li>-legend-</li>
+                        <ul><li>text</li></ul>
+                        <li>-/legend-</li>
+                    </ul>
                 </dd>
             </div>
             <div>
@@ -181,60 +205,80 @@
             </div>
             <div>
                 <dt>-label-</dt>
-                <dd></dd>
+                <dd>
+                    <ul>
+                        <li>-label for="id"-</li>
+                        <ul><li>label text</li></ul>
+                        <li>-/label-</li>
+                    </ul>
+                </dd>
             </div>
             <div>
                 <dt>-select-</dt>
                 <dd>
-                    -select name="name"-
-                    -option value="value1"-text1-/option-
-                    -option value="value2"-text2-/option-
-                    ...
-                    -/select-
+                    <ul>
+                        <li>-select name="name"-</li>
+                        <ul><li>-option value="value1"-text1-/option-</li></ul>
+                        <ul><li>-option value="value2"-text2-/option-</li></ul>
+                        <ul><li>...</li></ul>
+                        <li>-/select-</li>
+                    </ul>
                 </dd>
             </div>
             <div>
                 <dt>-option-</dt>
                 <dd>
-                    -select name="name"-
-                    -option value="value1"-text1-/option-
-                    -option value="value2"-text2-/option-
-                    ...
-                    -/select-
+                    <ul>
+                        <li>-select name="name"-</li>
+                        <ul><li>-option value="value1"-text1-/option-</li></ul>
+                        <ul><li>-option value="value2"-text2-/option-</li></ul>
+                        <ul><li>...</li></ul>
+                        <li>-/select-</li>
+                    </ul>
                 </dd>
             </div>
             <div>
                 <dt>-optgroup-</dt>
                 <dd>
-                    -optgroup label="label1"-
-                    -option-text1-/option-
-                    -option-text2-/option-
-                    -/optgroup-
+                    <ul>
+                        <li></li>-select-
+                        <ul><li>-optgroup label="label1"-</li>
+                        <ul><li>-option-text1-/option-</li></ul>
+                        <ul><li>-option-text2-/option-</li></ul></ul>
+                        <ul><li>-/optgroup-</li></ul>
+                        <li>-/select-</li>
+                    </ul>
                 </dd>
             </div>
             <div>
                 <dt>-textarea-</dt>
                 <dd>
-                    -textarea name="name"-
-                    text
-                    -/textarea-
+                    <ul>
+                        <li>-textarea name="name"-</li>
+                        <ul><li>text</li></ul>
+                        <li>-/textarea-</li>
+                    </ul>
                 </dd>
             </div>
             <div>
                 <dt>-datalist-</dt>
                 <dd>
-                    -datalist id="id"-
-                    -option value="value"/-
-                    -option value="value"/-
-                    -/datalist-
+                    <ul>
+                        <li>-datalist id="id"-</li>
+                        <ul><li>-option value="value"/-</li></ul>
+                        <ul><li>-option value="value"/-</li></ul>
+                        <li>-/datalist-</li>
+                    </ul>
                 </dd>
             </div>
             <div>
                 <dt>-button-</dt>
                 <dd>
-                    -button type="text"-
-                    content
-                    -/button-
+                    <ul>
+                        <li>-button type="text"-</li>
+                        <ul><li>content</li></ul>
+                        <li>-/button-</li>
+                    </ul>
                 </dd>
             </div>
         </dl>
@@ -267,7 +311,7 @@
             </tr>
             <tr>
                 <th>for</th>
-                <td data-label="for"></td>
+                <td data-label="for">specifies which form element a label is bound to</td>
             </tr>
             <tr>
                 <th>Value</th>
@@ -301,7 +345,7 @@
             </tr>
             <tr>
                 <th>Onclick</th>
-                <td data-label="Onclick"></td>
+                <td data-label="Onclick"> It appears when a user clicks on a button element. If you want to make a button onclick, you need to add the onclick event attribute to the -button- element.</td>
             </tr>
             <tr>
                 <th>Required</th>
